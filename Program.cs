@@ -50,7 +50,7 @@ namespace PSP_E1_A6_Markel
             haria3_3.Start();
             haria3_3.Join();
 
-            // 4. galdera
+            // 4. galdera:
             Console.WriteLine("\n4. GALDERA:");
             Thread haria4_1 = new Thread(() => Atazak2_Batuketa(3, 5));
             Thread haria4_2 = new Thread(() => Atazak2_Biderketa(4, 6));
