@@ -37,27 +37,33 @@ namespace PSP_E1_A6_Markel
 
             // 3. galdera
             Console.WriteLine("\n3. GALDERA:");
+            Thread haria3_1 = new Thread(() => Atazak2_Batuketa(3, 5));
+            Thread haria3_2 = new Thread(() => Atazak2_Biderketa(4, 6));
+            Thread haria3_3 = new Thread(() => Atazak2_Batuketa(7, 8));
 
-            haria2_1.Start();
-            haria2_1.Join();
+            haria3_1.Start();
+            haria3_1.Join();
 
-            haria2_2.Start();
-            haria2_2.Join();
+            haria3_2.Start();
+            haria3_2.Join();
 
-            haria2_3.Start();
-            haria2_3.Join();
+            haria3_3.Start();
+            haria3_3.Join();
 
             // 4. galdera
             Console.WriteLine("\n4. GALDERA:");
+            Thread haria4_1 = new Thread(() => Atazak2_Batuketa(3, 5));
+            Thread haria4_2 = new Thread(() => Atazak2_Biderketa(4, 6));
+            Thread haria4_3 = new Thread(() => Atazak2_Batuketa(7, 8));
 
-            haria2_1.Start();
-            haria2_2.Start();
+            haria4_1.Start();
+            haria4_2.Start();
 
-            haria2_1.Join();
-            haria2_2.Join();
+            haria4_1.Join();
+            haria4_2.Join();
 
-            haria2_3.Start();
-            haria2_3.Join();
+            haria4_3.Start();
+            haria4_3.Join();
         }
 
         // 1. galdera:
